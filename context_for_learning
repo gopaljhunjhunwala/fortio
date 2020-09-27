@@ -1,2 +1,12 @@
 Tool for load testing.
 Part of Istio.
+
+
+
+Sample Usage:
+
+docker run -it --rm --name my-fortio fortio/fortio load -c 32 -qps 25 -t 30s <Site Name>
+
+32 concurrent requests
+25 requests per second
+for 30 seconds
